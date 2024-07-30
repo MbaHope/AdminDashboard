@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>    
+    <!-- GOOGLE FONT CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Boxicons CDNS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--======CHART CDN =========== -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+<body>
+
+    <!-- Navbar Starts -->
+    <nav>
+        <div class="container">
+            <a href="./index.html"><img src="./assets/images/logo.svg" class="logo" alt="logo"></a>
+            <div class="search-bar">
+                <span><i class='bx bx-search-alt-2'></i></span>
+                    <input type="search" placeholder="Search">
+            </div>
+            <div class="profile-area">
+                <div class="theme-btn">
+                    <i class='bx bxs-sun active'></i>
+                    <i class='bx bxs-moon' ></i>
+                </div>
+                <div class="profile">
+                    <div class="profile-photo">
+                        <img src="./assets/images/profile.jpeg" alt="">
+                    </div>
+                    <h5>Hope Mba</h5>
+                    <i class='bx bx-chevron-down' ></i>
+                </div>
+
+                <button id="menu-btn">
+                    <i class='bx bx-menu' onclick="menuBtn"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- NavBar Ends -->
+
+<main>
+    <aside>
+        <button id="close-btn">
+            <i class='bx bx-x'></i>
+        </button>
+
+        <div class="sibebar">
+
+            <a href="" class="active">
+                <i class='bx bxs-grid-alt'></i>
+                <h4>Dashboard</h4>
+            </a>
+            <a href="./user.html">
+                <i class='bx bxs-user'></i>
+                <h4>User</h4>
+            </a>
+            <a href="./task.html">
+                <i class='bx bx-task'></i>
+                <h4>Tasks</h4>
+            </a>
+            <a href="./wallet.html">
+                <i class='bx bxs-wallet-alt'></i>
+                <h4>Wallet</h4>
+            </a>
+            <a href="./analytics.html">
+                <i class='bx bx-analyse'></i>
+                <h4>Analytics</h4>
+            </a>
+            <a href="./kyc.html">
+                <i class='bx bxs-user'></i>
+                <h4>KYC</h4>
+            </a>
+           
+            <a href="./admin.html">
+                <i class='bx bxs-cog'></i>
+                <h4>Settings</h4>
+            </a>
+        </div>
+                <!-- END OF SIDEBAR -->
+    </aside>
+    <!-- END OF ASIDE -->
+
+    <section class="middle">
+        <div class="header">
+            <h1>Overview</h1>
+            <input type="date">
+        </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="top">
+                        <div class="left">
+                            <img src="./assets/images/btc.png" alt="">
+                            <h2>MEMEBERS</h2>
+                        </div>
+                        <img src="./assets/images/visa.png" class="right" alt="">
+                    </div>
+
+                    <div class="middle">
+                        <h1>$822,199</h1>
+                        <div class="chip">
+                            <img src="./assets/images/card-chip.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        <div class="left"> 
+                            <small>Card Holder</small>
+                            <h5>Hope Mba</h5>
+                        </div>
+
+                        <div class="expiry">
+                            <small>Expiry Date</small>
+                            <h5>8/July/26 </h5>
+                        </div>
+                        <div class="cvv">
+                            <small>CVV</small>
+                            <h5>123</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF CARD 1 -->
+
+                <div class="card">
+                    <div class="top">
+                        <div class="left">
+                            <img src="./assets/images/eth.png" alt="">
+                            <h2>TOTAL MINED</h2>
+                        </div>
+                        <img src="./assets/images/mastercard.png" class="right" alt="">
+                    </div>
+
+                    <div class="middle">
+                        <h1>$995,360</h1>
+                        <div class="chip">
+                            <img src="./assets/images/card-chip.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        <div class="left">
+                            <small>Card Holder</small>
+                            <h5>Hope Mba</h5>
+                        </div>
+
+                        <div class="expiry">
+                            <small>Expiry Date</small>
+                            <h5>8/July/27</h5>
+                        </div>
+                        <div class="cvv">
+                            <small>CVV</small>
+                            <h5>123</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF CARD 2 -->
+
+                <div class="card">
+                    <div class="top">
+                        <div class="left">
+                            <img src="./assets/images/btc.png" alt="">
+                            <h2>TASKS</h2>
+                        </div>
+                        <img src="./assets/images/visa.png" class="right" alt="">
+                    </div>
+
+                    <div class="middle">
+                        <h1>$745,156</h1>
+                        <div class="chip">
+                            <img src="./assets/images/card-chip.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        <div class="left">
+                            <small>Card Holder</small>
+                            <h5>Hope Mba</h5>
+                        </div>
+
+                        <div class="expiry">
+                            <small>Expiry Date</small>
+                            <h5>8/July/28</h5>
+                        </div>
+                        <div class="cvv">
+                            <small>CVV</small>
+                            <h5>123</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF CARD 3 -->
+            </div>
+            <!-- ======END OF CARDS ======-->
+
+        <div class="monthly-report">
+            <div class="report">
+                <h3>Income</h3>
+                <div>
+                    <details>
+                        <h1>$29.234</h1>
+                        <h6 class="success">+3.3%</h6>
+                    </details>
+                    <p class="muted">Compared to $26,92 last month</p>
+                </div>
+            </div>
+            <!-- END OF INCOME REPORT -->
+
+            <div class="report">
+                <h3>Expenses</h3>
+                <div>
+                    <details>
+                        <h1>$9,005</h1>
+                        <h6 class="danger">-6.5%</h6>
+                    </details>
+                    <p class="muted">Compared to $11,912 last month</p>
+                </div>
+            </div>
+            <!-- END OF EXPENSES REPORT -->
+
+            <div class="report">
+                <h3>Cashback</h3>
+                <div>
+                    <details>
+                        <h1>$9,004</h1>
+                        <h6 class="success">+7.1%</h6>
+                    </details>
+                    <p class="muted">Compared to $3,028 last month</p>
+                </div>
+            </div>
+            <!-- END OF CASHBACK REPORT -->
+
+            <div class="report">
+                <h3>Turnover</h3>
+                <div>
+                    <details>
+                        <h1>$118,224</h1>
+                        <h6 class="danger">-17.8%</h6>
+                    </details>
+                    <p class="muted">Compared to $114,344 last month</p>
+                </div>
+            </div>
+            <!-- END OF TURNOOVER REPORT -->
+        </div>
+        <!-- END OF MONTHLY REPORT -->
+
+    <table class="canvas mt-5">
+    <tr>
+    <th>Mining</th>
+    <th>Total Mining</th>
+    <th>Registered Users</th>
+    <th>Total Registered Users</th>
+    <th>Leaderboard</th>
+    </tr>
+
+    <tr>
+
+    <td>12345</td>
+    <td>12345</td>
+    <td>12345</td>
+    <td>12345</td>
+    <td>12345</td>
+    </tr>
+
+    <tr>
+
+    <td>12345</td>
+    <td>12345</td>
+    <td>12345</td>
+    <td>12345</td>
+    <td>12345</td>
+    </tr>
+
+    <tr>
+
+    <td>12345</td>
+    <td>12345</td>
+    <td>12345</td>
+    <td>12345</td>
+    <td>12345</td>
+    </tr>
+
+    <tr>
+
+    <td>12345</td>
+    <td>12345</td>
+    <td>12345</td>
+    <td>12345</td>
+    <td>12345</td>
+    </tr>
+
+    </table>
+
+     <!-- ==========UNCOMMENTING MAKES THE LIGHT AND DARK MODES ACTIVE BUT MAKES THE ANALYTICS CHART APPEAR, I DON'T KNOW HOW TO FIX IT========== -->
+    <!-- <canvas id="chart"></canvas> -->
+    </section>
+    <!-- END OF MIDDLE -->
+
+    <section class="right">
+        <div class="investments">
+            <div class="header">
+                <h2>Active Minners</h2>
+                <a href="#">More <i class='bx bx-chevron-right' ></i></a>
+            </div>
+        
+
+        <div class="investment">
+            <img src="./assets/images/unilever.png" alt="">
+            <h4>Unilever</h4>
+            <div class="date-time">
+                <p>7 Nov 2023</p>
+                <small class="text-muted">9:14pm</small>
+            </div>
+        
+
+        <div class="bonds">
+            <p>1402</p>
+            <small class="text-muted">Bonds</small>
+        </div>
+
+        <div class="amount">
+            <h4>$23,033</h4>
+            <small class="danger">-4.27%</small>
+        </div>
+
+    </div>
+    <!-- END OF INVESTMENT -->
+        <div class="investment">
+            <img src="./assets/images/tesla.png" alt="">
+            <h4>Tesla</h4>
+            <div class="date-time">
+                <p>7 Nov 2023</p>
+                <small class="text-muted">9:14pm</small>
+            </div>
+        
+
+        <div class="bonds">
+            <p>1402</p>
+            <small class="text-muted">Bonds</small>
+        </div>
+
+        <div class="amount">
+            <h4>$23,033</h4>
+            <small class="success">+35.27%</small>
+        </div>
+
+    </div>
+    <!-- END OF INVESTMENT -->
+
+        <div class="investment">
+            <img src="./assets/images/monster.png" alt="">
+            <h4>Monster</h4>
+            <div class="date-time">
+                <p>7 Nov 2023</p>
+                <small class="text-muted">9:14pm</small>
+            </div>
+        
+
+        <div class="bonds">
+            <p>1402</p>
+            <small class="text-muted">Bonds</small>
+        </div>
+
+        <div class="amount">
+            <h4>$23,033</h4>
+            <small class="success">+8.27%</small>
+        </div>
+
+    </div>
+    <!-- END OF INVESTMENT -->
+        <div class="investment">
+            <img src="./assets/images/macdonalds.png" alt="">
+            <h4>MacDonalds</h4>
+            <div class="date-time">
+                <p>7 Nov 2023</p>
+                <small class="text-muted">9:14pm</small>
+            </div>
+        
+
+        <div class="bonds">
+            <p>1402</p>
+            <small class="text-muted">Bonds</small>
+        </div>
+
+        <div class="amount">
+            <h4>$23,033</h4>
+            <small class="danger">-7.25%</small>
+        </div>
+
+    </div>
+    <!-- END OF INVESTMENT -->
+
+    </div>
+        <!-- END OF INVESTMENTS -->
+
+
+      
+    </section>
+    <!-- END OF RIGHT -->
+</main>
+
+    <script src="./script.js"></script>
+</html>

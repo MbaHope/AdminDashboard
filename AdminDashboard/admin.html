@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <!-- GOOGLE FONT CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Boxicons CDNS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <!-- BOOTSTRAP CDN LINK -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!--======CHART CDN =========== -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <!-- Navbar Starts -->
+    <nav>
+      <div class="container">
+        <a href="./index.html"><img src="./assets/images/logo.svg" class="logo" alt="logo"></a>
+        <div class="search-bar">
+          <span><i class="bx bx-search-alt-2"></i></span>
+          <input type="search" placeholder="Search" />
+        </div>
+        <div class="profile-area">
+          <div class="theme-btn">
+            <i class="bx bxs-sun active"></i>
+            <i class="bx bxs-moon"></i>
+          </div>
+          <div class="profile">
+            <div class="profile-photo">
+              <img src="./assets/images/profile.jpeg" alt="" />
+            </div>
+            <h5>Hope Mba</h5>
+            <i class="bx bx-chevron-down"></i>
+          </div>
+
+          <button id="menu-btn">
+            <i class="bx bx-menu" onclick="menuBtn"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- NavBar Ends -->
+
+    <main>
+      <aside>
+        <button id="close-btn">
+          <i class="bx bx-x"></i>
+        </button>
+
+        <div class="sibebar">
+          <a href="#" class="active">
+            <i class="bx bxs-grid-alt"></i>
+            <h4>Dashboard</h4>
+          </a>
+          <a href="./user.html">
+            <i class="bx bxs-user"></i>
+            <h4>User</h4>
+          </a>
+          <a href="./task.html">
+            <i class="bx bx-task"></i>
+            <h4>Tasks</h4>
+          </a>
+          <a href="./wallet.html">
+            <i class="bx bxs-wallet-alt"></i>
+            <h4>Wallet</h4>
+          </a>
+          <a href="./analytics.html">
+            <i class="bx bx-analyse"></i>
+            <h4>Analytics</h4>
+          </a>
+          <a href="./kyc.html">
+            <i class="bx bxs-user"></i>
+            <h4>KYC</h4>
+          </a>
+
+          <a href="">
+            <i class="bx bxs-cog"></i>
+            <h4>Settings</h4>
+          </a>
+        </div>
+        <!-- END OF SIDEBAR -->
+      </aside>
+      <!-- END OF ASIDE -->
+
+      <div class="heading">
+        <table class="canvas mt-5">
+          <tr>
+            <th>Admin</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Country</th>
+            <th>Date Registered</th>
+            <th>
+                <a href="./form.html"><button class="btn btn-primary" type="button"> View</button></a>
+                
+            </th>
+            <th>
+                <div class="dropdown"><button class="btn btn-primary" type="button" data-bs-toggle="dropdown" aria-expanded="false">Edit</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Add Admin</a></li>
+                      <li><a class="dropdown-item" href="#">Activate Account</a></li>
+                      <li><a class="dropdown-item" href="#">Deactivate Account</a></li>
+                      <li><a class="dropdown-item" href="#">View More</a></li>
+                    </ul>
+                  </div>
+            </th>
+          </tr>
+
+          <tr>
+            <td>12345</td>
+            <td>12345</td>
+            <td>12345</td>
+            <td>12345</td>
+            <td>12345</td>
+            <td>12345</td>
+            <td>12345</td>
+          </tr>
+
+          <tr>
+            <td>12345</td>
+            <td>12345</td>
+            <td>12345</td>
+            <td>12345</td>
+            <td>12345</td>
+            <td>12345</td>
+            <td>12345</td>
+          </tr>
+
+          <tr>
+            <td>12345</td>
+            <td>12345</td>
+            <td>12345</td>
+            <td>12345</td>
+            <td>12345</td>
+            <td>12345</td>
+            <td>12345</td>
+          </tr>
+
+          <tr>
+            <td>12345</td>
+            <td>12345</td>
+            <td>12345</td>
+            <td>12345</td>
+            <td>12345</td>
+            <td>12345</td>
+            <td>12345</td>
+          </tr>
+        </table>
+      </div>
+
+     <!-- ==========UNCOMMENTING MAKES THE LIGHT AND DARK MODES ACTIVE BUT MAKES THE ANALYTICS CHART APPEAR, I DON'T KNOW HOW TO FIX IT========== -->
+    <!-- <canvas id="chart"></canvas> -->
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
